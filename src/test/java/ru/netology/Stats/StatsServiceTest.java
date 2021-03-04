@@ -1,10 +1,12 @@
 package ru.netology.Stats;
 
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class StatsServiceTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void shouldCalculateSum() {
         StatsService service = new StatsService();
 
@@ -16,7 +18,7 @@ class StatsServiceTest {
         assertEquals(expected, actual);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void shouldCalculateAverage() {
         StatsService service = new StatsService();
 
@@ -28,7 +30,7 @@ class StatsServiceTest {
         assertEquals(expected, actual);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void shouldCalculateMax() {
         StatsService service = new StatsService();
 
@@ -40,7 +42,7 @@ class StatsServiceTest {
         assertEquals(expected, actual);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void shouldCalculateMin() {
         StatsService service = new StatsService();
 
@@ -52,7 +54,7 @@ class StatsServiceTest {
         assertEquals(expected, actual);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void shouldCalculateOverAverage() {
         StatsService service = new StatsService();
 
@@ -64,7 +66,7 @@ class StatsServiceTest {
         assertEquals(expected, actual);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void shouldCalculateUnderAverage() {
         StatsService service = new StatsService();
 

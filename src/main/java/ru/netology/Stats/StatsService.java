@@ -12,11 +12,8 @@ public class StatsService {
     }
 
     public int calculateAverage(int[] monthlySales) {
-        int sum = 0;
-        for (int sale : monthlySales) {
-            sum += sale;
-        }
-        return sum / monthlySales.length;
+        StatsService service = new StatsService();
+        return service.calculateSum(monthlySales) / monthlySales.length;
     }
 
     public int calculateMax(int[] monthlySales) {
@@ -48,11 +45,8 @@ public class StatsService {
     }
 
     public int calculateOverAverage(int[] monthlySales) {
-        int sum = 0;
-        for (int sale : monthlySales) {
-            sum += sale;
-        }
-        int averageSum = sum / monthlySales.length;
+        StatsService service = new StatsService();
+        int averageSum = service.calculateAverage(monthlySales);
         int monthCount = 0;
         for (int sale : monthlySales) {
             if (averageSum < sale) {
@@ -63,11 +57,8 @@ public class StatsService {
     }
 
     public int calculateUnderAverage(int[] monthlySales) {
-        int sum = 0;
-        for (int sale : monthlySales) {
-            sum += sale;
-        }
-        int averageSum = sum / monthlySales.length;
+        StatsService service = new StatsService();
+        int averageSum = service.calculateAverage(monthlySales);
         int monthCount = 0;
         for (int sale : monthlySales) {
             if (averageSum > sale) {
